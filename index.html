@@ -26,4 +26,21 @@
   <h1>Seninle Kim Sevişmek İsterdi?</h1>
   <p>Teste başla ve sana gizliden aşık olan 3 kişiyi öğren!</p>
   <button onclick="testCalistir()">Teste Başla</button>
-  <
+  <div class="sonuc" id="sonucAlani"></div>
+
+  <script>
+    const kisiler = ["Elif", "Mert", "Zeynep", "Ayşe", "Ahmet", "Berke", "Selin", "Kemal"];
+    function testCalistir() {
+      let secilenler = [];
+      while (secilenler.length < 3) {
+        let sec = kisiler[Math.floor(Math.random() * kisiler.length)];
+        if (!secilenler.includes(sec)) {
+          secilenler.push(sec);
+        }
+      }
+      document.getElementById("sonucAlani").innerText =
+        "Sana gizliden gizliye aşık olanlar: " + secilenler.join(", ");
+    }
+  </script>
+</body>
+</html>
