@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ego Testi</title>
+  <style>
+    body { font-family: Arial; text-align: center; padding: 30px; }
+    button { font-size: 18px; padding: 10px 20px; margin-top: 20px; }
+    .sonuc { font-weight: bold; font-size: 20px; color: green; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Seninle Kim Sevişmek İsterdi?</h1>
+  <p>Teste başla ve sana gizliden aşık olan 3 kişiyi öğren!</p>
+  <button onclick="testCalistir()">Teste Başla</button>
+  <div class="sonuc" id="sonucAlani"></div>
+
+  <script>
+    const kisiler = ["Elif", "Mert", "Zeynep", "Ayşe", "Ahmet", "Berke", "Selin", "Kemal"];
+    function testCalistir() {
+      let secilenler = [];
+      while (secilenler.length < 3) {
+        let sec = kisiler[Math.floor(Math.random() * kisiler.length)];
+        if (!secilenler.includes(sec)) secilen
