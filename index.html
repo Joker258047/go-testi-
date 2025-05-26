@@ -30,6 +30,7 @@
 
   <script>
     const kisiler = ["Elif", "Mert", "Zeynep", "Ayşe", "Ahmet", "Berke", "Selin", "Kemal"];
+    
     function testCalistir() {
       let secilenler = [];
       while (secilenler.length < 3) {
@@ -38,8 +39,8 @@
           secilenler.push(sec);
         }
       }
-      document.getElementById("sonucAlani").innerText =
-        "Sana gizliden gizliye aşık olanlar: " + secilenler.join(", ");
+      document.getElementById("sonucAlani").innerText = 
+        "Sana gizliden aşık olanlar: " + secilenler.join(", ");
     }
   </script>
 </body>
